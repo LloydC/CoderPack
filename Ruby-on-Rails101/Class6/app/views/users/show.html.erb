@@ -1,0 +1,5 @@
+<h1><center> Welcome to <%= @user.username %> page</center>  </h1>
+<br>
+<%= @user.username %> <%= link_to "Go home", users_path()%> <%= link_to "Topic list", user_topics_path(@user.id)%> <%= link_to "Replies list", user_replies_path(@user.id)%>
+
+

@@ -1,0 +1,10 @@
+<h1> Welcome to App 5! </h1>
+
+<% @user.each do |user| %>
+  <%= user.email %>
+  <br>
+  <% end %>
+
+<%= link_to 'Sign-up', new_user_registration_path %>
+<%= link_to 'Edit', edit_user_registration_path %>
+<%= link_to 'Log-out', destroy_user_session_path  %>

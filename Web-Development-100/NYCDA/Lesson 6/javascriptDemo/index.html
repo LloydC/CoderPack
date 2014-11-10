@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Javascript Demo</title>
+
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="scripts/my_library.js">
+
+        </script>
+
+        <script>
+       $(document).ready(function(){
+        $("#monitor").fadeOut(1000, function(){
+
+            $("#monitor").fadeIn(2000, function(){
+
+                $("#monitor").css({color:"red"})
+
+                      });
+                
+
+            });
+
+                $("myClass").click(function(){
+                   $(this).addClass("mySecondClass")
+              
+       });
+    });
+
+        </script>
+
+ 	  </head>
+
+		<body> 
+            <style> #monitor{font-size: 120pt}
+                .myClass{ width: 300px;
+                    height: 100px
+                    background: red}
+                .mySecondClass{
+                background: green;
+
+                }
+             </style>
+
+            <div id = "monitor"> ;) </div>
+            <div class="myClass"></div>
+          
+        </body>
+
+</html>

@@ -1,0 +1,183 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ b{
+  text-decoration: none;
+  color: blue;
+  font-family: impact;
+  font-weight: bold;
+  font-size: 13px;
+  opacity: 1;
+  transition: color .5s ease;
+}
+
+ b:hover{
+  color: red;
+}
+h2{
+  font-family: Courier;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h3{
+  color: Navy;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 17px;
+}
+p{
+font-family: Tahoma;
+font-size: 15px;
+}
+h6{
+    font-family: Courier;
+  font-weight: bold;
+  font-size: 15px;
+}
+/*The code above is for styling my text*/
+
+/*The code below is used for the initial layout as well as the styling of the forms  */
+body{
+background-color: SteelBlue;
+margin: 0;
+}
+.container{
+  min-height: 600px;
+  padding-top: 150px;
+}
+.container-item{
+width:1300px;
+height: 400px;
+background: black;
+}
+
+.dest{
+  background: CadetBlue;
+  width: 400px;
+  height: 350px;
+  text-align: center;
+}
+
+.event{
+background: SeaGreen;
+ width: 380px;
+ height: 340px; 
+ text-align: center;
+}
+.item{
+ background:white;
+ width:400px;
+ height:360px; 
+  border-radius: 0 0 2px 2px;
+ text-align: center;
+ margin-left: 10px;
+
+}
+.item-show{
+ background:white;
+ width:400px;
+ height:400px; 
+  border-radius: 0 0 2px 2px;
+ text-align: center;
+ margin-left: 10px;
+}
+
+.header-bar {
+  width: 100%;
+  height: 140px;
+  background-color: white;
+  opacity: .9;
+  border:solid 4px #000;
+  border-radius: 0 0 0px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.header-bar-box{
+  height: 100px;
+  width: fit;
+  float: left;
+  opacity: 1;
+
+}
+#id{
+  background:white;
+  width:200px;
+  height:100px;
+  margin-left: 400px;
+  margin-top: 5px;
+  position:absolute;
+}
+
+#logo {
+  margin: 0px 0 0 20px;
+
+}
+
+#signup{
+  background: red;
+  width:150px;
+  height:240px;
+}
+#signup-edit{
+ background: green;
+ width: 220px;
+ height: 280px; 
+ text-align: center;
+}
+
+#nav {
+  float: right;
+  margin-right: 300px;
+  margin-top: 20px;
+}
+
+#nav ul{
+  list-style-type: none;
+}
+
+#nav li {
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#nav a{
+  text-decoration: none;
+  color: black;
+  font-family: impact;
+  font-weight: bold;
+  font-size: 19px;
+  opacity: 1;
+  transition: color .5s ease;
+}
+
+#nav a:hover{
+  color: gray;
+}
+
+#footer{
+height: 150px;
+
+margin-top: 120px;
+
+background-color: gray;
+color :black;
+border:solid 4px #000;
+border-radius: 4px 4px 4px 4px;
+}

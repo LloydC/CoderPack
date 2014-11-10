@@ -1,0 +1,25 @@
+<center><div id = "signup">
+		<h2><u>Sign Up</u></h2>
+
+		<%=form_for @users, :url => users_path, :html => { :multipart => true } do |f| %>
+
+		<%=f.label :email %>
+		<%=f.text_field :email %>
+
+		<%=f.label :password %>
+		<%=f.password_field :password %>
+
+		<%=f.label :interests %>
+		<%=f.text_field :interests %>
+
+		<%=f.label :username %>
+		<%=f.text_field :username %>
+
+		 <%= f.file_field :avatar %>
+
+		<%=f.submit 'Submit' %>
+		<%end%>
+
+	</div></center>
+
+	<%= link_to 'Go back to login', root_path %>

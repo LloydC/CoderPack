@@ -1,0 +1,21 @@
+<h1><center><u> Items </u> </center></h1>
+
+<h3>If you enjoy traveling with comfort and ease, some of these items could be of interest to you : </h3>
+<% @items.each do |item| %>
+<div class = 'item' style = 'float: center'>
+  <%= item.name %>
+  <br>
+  <br>
+  <%= image_tag item.avatar.url(:medium) %>
+  <br>
+  $<%= item.price %>
+  <br>
+   <%= link_to 'Click here to see more information', item_path(item) %>
+
+<%= link_to 'Delete this item', item_path(item), method: :delete %>
+</div>
+
+<br>
+<% end %>
+<br>
+<%= link_to 'Admins who wish to add items to the list should press here', new_item_path %>

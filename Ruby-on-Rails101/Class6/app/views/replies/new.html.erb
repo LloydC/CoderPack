@@ -1,0 +1,8 @@
+
+<%= form_for [@user,@reply] do |f| %>   
+<%=f.label :body %>   
+<%=f.text_field :body %>
+<%=f.label :topic_id %>   
+<%=f.text_field :topic_id %>
+<%=f.submit %> 
+<% end %>

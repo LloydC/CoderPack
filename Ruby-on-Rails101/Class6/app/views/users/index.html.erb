@@ -1,0 +1,19 @@
+<br>
+
+<br>
+
+<h3>Would you like to: </h3>
+
+<% @users.each do |user| %>
+<p><%= link_to "Create a topic", new_user_topic_path(user)%> </p>
+<br>
+<p><%= link_to "See list of topics", user_topics_path(user)%> </p>
+<p><%= link_to "See topics' reply", topic_replies_path(user)%></p>
+<p> <%= user.username %> <%= user.id %> </p>
+<p><%= link_to "User Profile", user_path(user)%>  <%= link_to "User Edit", edit_user_path(user)%>  <%= link_to "Remove user", user_path(user), method: :delete %></p>
+<% end %>
+
+<br>
+<br>
+<p>Create new users/Sign-up <%= link_to "New User path", new_user_path()%> </p>
+

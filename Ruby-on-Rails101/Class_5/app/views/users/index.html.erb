@@ -1,0 +1,21 @@
+<h1> List of users</h1>
+<br>
+<%= link_to "Login", sessions_path()%>
+<br>
+<br>
+<% @users.each do |user| %>
+<p> <%= user.username %> <%= link_to "User Profile", user_path(user)%> or you can<%= link_to "User Edit", edit_user_path(user)%> or you can <%= link_to "Remove user", user_path(user), method: :destroy %></p>
+<% end %>
+<br>
+<br>
+<p>Here's the path to creating new users <%= link_to "New User path", new_user_path()%> </p>
+<br>
+
+ 
+
+
+
+
+
+
+

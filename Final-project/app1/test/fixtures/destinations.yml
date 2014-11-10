@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  country: MyString
+  languages: MyString
+  visas_info: MyText
+  health_info: MyText
+  safety_info: MyText
+  events_id: 1
+
+two:
+  name: MyString
+  country: MyString
+  languages: MyString
+  visas_info: MyText
+  health_info: MyText
+  safety_info: MyText
+  events_id: 1

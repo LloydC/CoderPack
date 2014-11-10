@@ -1,0 +1,26 @@
+<h1>My First JavaScript</h1>
+
+<p>Click Date to display current day, date, and time.</p>
+<button type="button" onclick="myFunction()">Date</button>
+
+<p id="demo"> </p>
+
+<h2>Change background color</h2>
+<p>Mouse over the squares!</p>
+
+<table style="width:300px;height:100px">
+  <tr>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:Khaki">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:PaleGreen">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:Red">
+    </td>
+  </tr>
+</table>

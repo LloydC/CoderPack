@@ -1,0 +1,12 @@
+<br>
+<h1> <center><u>Replies page</u></center></h1>
+<br>
+
+<% @replies.each do |reply| %>
+<p> <%= reply.body %> by <%= @username %> </p>
+<p><%= link_to "Reply details", reply_path(reply)%>  <%= link_to "Edit reply", edit_reply_path(reply)%>  <%= link_to "Remove reply", reply_path(reply), method: :delete %></p>
+<% end %>
+
+<%= link_to "Create a new reply", new_topic_reply_path() %>
+
+<center><%= link_to "Go home", users_path()%> </center>

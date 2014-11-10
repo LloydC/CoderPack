@@ -1,0 +1,9 @@
+<h1><center>Hi, this is my app 2.0 </center></h1>
+<%= link_to "Go about", about_path(:id) %>
+
+<%= render 'twitter_widget', title: 'Urgent message for you', body: "This is really important", test: "Have a nice day" %>
+
+
+<% @transactions.each do |t| %>
+<p> $<%= t[:amount]%> @ <%= t[:date]%></p>
+<% end %>

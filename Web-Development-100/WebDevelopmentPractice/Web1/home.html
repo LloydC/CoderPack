@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<title> My practice page </title>
+	<link href= "styles/style.css" rel= "stylesheet" type = "text/css">
+
+	<!-- JQUERY LINK -->
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type = "text/javascript">
+	$(document).ready(function(){
+	$('nav li ul').hide().removeClass('drop');
+
+	$('nav li').hover(function() {
+	$('ul', this).stop().slideDown(350);
+	  },
+	  function () {
+	    $('ul', this).stop().slideUp(350);
+	  });
+
+	});
+	</script>
+</head>
+
+<body> 
+	<div class="header-bar">
+			<div class="header-bar-box" id="logo">		
+			<!--<img src="images/welcome.png" width= "150px" height = "50px"> -->
+			</div>
+
+			<div class="header-bar-box" id="nav">
+				<nav>
+					<ul class="drop">
+					<li><a href="/">Home</a></li>
+					<li><a href="/">About us</a></li>
+					<li><a href="/">Projects</a>
+</li>			
+					</ul>
+				</nav>
+			</div>	
+
+	</div>
+</body>
+
+</html>

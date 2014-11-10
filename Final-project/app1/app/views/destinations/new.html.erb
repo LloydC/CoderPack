@@ -1,0 +1,35 @@
+<center>
+	<div id = "signup-edit">
+		<h2><u>Destination' information will be added here :</u></h2>
+
+		<%=form_for @destination, :url => destinations_path, :html => { :multipart => true } do |f| %>
+
+		<%=f.label :name %>
+		<%=f.text_field :name %>
+		<br>
+		<%=f.label :country %>
+		<%=f.text_field :country %>
+		<br>
+		<%=f.label :languages %>
+		<%=f.text_field :languages %>
+		<br>
+		<%=f.label :visas_info %>
+		<%=f.text_field :visas_info %>
+		<br>
+		<%=f.label :health_info %>
+		<%=f.text_field :health_info %>
+		<br>
+		<%=f.label :safety_info %>
+		<%=f.text_field :safety_info %>
+		<br>
+		<%=f.label :events_id %>
+		<%=f.text_field :events_id %>
+		<br>
+		<br>
+		 <%= f.file_field :avatar %>
+		 <br>
+		<%=f.submit 'Submit' %>
+		<%end%>
+</div>
+</center>
+<%= link_to 'Return to the destination page', destinations_path %>

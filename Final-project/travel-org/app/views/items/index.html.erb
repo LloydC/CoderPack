@@ -1,0 +1,10 @@
+<h1>We recommend these items for any trip you have in mind: </h1>
+<% @items.each do |item| %>
+  <%= item.name %>
+  <br>
+  <%= item.details %>
+  <br>
+  <%= image_tag item.avatar.url(:thumb) %>
+  <br>
+
+<% end %>

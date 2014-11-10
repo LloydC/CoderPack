@@ -1,0 +1,15 @@
+<h2>Welcome to <%= @destination.name %>, <%= @destination.country %> page </h2>
+<br>
+<center><%= image_tag @destination.avatar.url(:medium) %></center>
+<br>
+<h3> There is a few things you should know, such as: </h3>
+<br>
+<p><u>Languages: </u> <%= @destination.languages %> </p> 
+  <br>
+ <p> <u>Visas Information:</u><%= @destination.visas_info %></p> 
+  <br>
+  <p> <u> Health Information: </u> <%= @destination.health_info %></p>
+  <br>
+  <p><u>Safety information:  </u><%= @destination.safety_info %></p>
+  <br>
+<%= link_to 'Go back', destinations_path %>

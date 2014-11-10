@@ -1,0 +1,10 @@
+<h1> Index </h1>
+
+<% @users.each do |u| %>
+<p><%= u.name  %> <%= link_to "Delete User", user_path(u), method: :delete %> </p>
+<% end %>
+
+<% @colors.each do |c| %>
+<p style = "color:<%=c %> "> <%= c %> </p>
+
+<% end %> 

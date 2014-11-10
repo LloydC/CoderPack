@@ -1,0 +1,10 @@
+<h1> Create a new user here </h1>
+<br>
+
+<%= form_for @users do |f| %>   
+<%=f.label :username %>   
+<%=f.text_field :username %>
+<%=f.submit :create %> 
+<% end %>
+<br>
+<center><%= link_to "Go home", :back %><center>

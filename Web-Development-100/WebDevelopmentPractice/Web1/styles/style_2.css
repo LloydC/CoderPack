@@ -1,0 +1,122 @@
+   body {  
+   	background:#191919 
+   }
+
+   #header {
+   	position:relative; 
+   	width:945px; 
+   	height:145px; 
+   	margin-bottom:10px; 
+   	z-index:99; 
+   	background:#191919;
+   }
+
+   #header h1 a { 
+   	text-decoration:none; 
+   	color:#CCC; 
+   	font-weight:normal;
+   }
+
+#header h1 a:focus { 
+	text-decoration:none; 
+	color:#CCC; 
+	font-weight:normal;
+}
+
+#header h1 a:hover { 
+	text-decoration:none; 
+	color:#CCC; 
+	font-weight:normal;
+}
+
+/*This is where navigation begins */
+ .header-bar {
+  width: 100%;
+  height: fit;
+  background-color: lightgray;
+  opacity: .9;
+  border-radius: 0 0 3px 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.header-bar-box{
+  height: 50px;
+  width: fit;
+  float: left;
+  opacity: 1;
+}
+
+#logo {
+  margin: 0px 0 0 20px;
+}
+
+
+#nav {
+  float: right;
+  margin-right: 30px;
+}
+
+#nav ul{
+  list-style-type: none;
+}
+
+#nav li {
+  display: inline;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#nav a{
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 19px;
+  opacity: 1;
+  transition: color .5s ease;
+}
+
+#nav a:hover{
+  color: gray;
+}
+
+/* This is where the navigation ends*/
+
+/*Code from taimur related to the drop-down property for the navigation bar
+To be explored and play with!
+ */
+
+.navigation_bar nav {
+  background: #FFF;
+  float: left; }
+  .navigation_bar nav ul {
+    text-align: center; }
+    .navigation_bar nav ul li {
+      float: left;
+      display: inline; }
+      .navigation_bar nav ul li:hover {
+        background: #fff; }
+      .navigation_bar nav ul li a {
+        display: block;
+        padding: 0px 25px;
+        color: #444;
+        text-decoration: none;
+        font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; }
+      .navigation_bar nav ul li ul {
+        position: absolute;
+        width: 110px;
+        background: #FFF; }
+        .navigation_bar nav ul li ul li {
+          width: 110px; }
+          .navigation_bar nav ul li ul li a {
+            display: block;
+            padding: 15px 10px;
+            color: #444; }
+          .navigation_bar nav ul li ul li:hover a {
+            background: #F7F7F7  ; }
+        .navigation_bar nav ul li ul.fallback {
+          display: none; }
+      .navigation_bar nav ul li:hover ul.fallback {
+        display: block; }

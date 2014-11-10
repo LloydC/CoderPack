@@ -1,0 +1,71 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+//background: -webkit-linear-gradient(#F0F0E8,#000000);
+//background-repeat: no-repeat;
+//background-size: 100% ;
+background: DarkSlateGray ;
+}
+
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.header-bar {
+  width: 100%;
+  height: fit;
+  background-color: darkslateblue ;
+  opacity: .9;
+  border-radius: 0 0 3px 3px;
+  position: relative;
+  padding-bottom: 60px;
+  top: 0;
+  left: 0;
+
+}
+
+.header-bar-box{
+  height: 50px;
+  width: fit;
+  float: left;
+  opacity: 1;
+  background: url();
+}
+
+#logo {
+  margin: 0px 0 0 20px;
+}
+
+
+#nav {
+  float: right;
+  margin-right: 30px;
+}
+
+#nav ul{
+  list-style-type: none;
+}
+
+#nav li {
+  display: inline;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+  opacity: 1;
+  transition: color .5s ease;
+}
+
+#nav a:hover{
+  color: gray;
+}
+
+/* This is where the navigation ends*/

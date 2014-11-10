@@ -1,0 +1,24 @@
+<h2><u>Edit your information </u></h2>
+
+	<div id = 'signup-edit'>
+		<br>
+		<%=form_for @users, :url => user_path, :html => { :multipart => true } do |f| %>
+
+		<%=f.label :email %>
+		<%=f.text_field :email %>
+		<br>	
+		<%=f.label :password %>
+		<%=f.password_field :password %>
+		<br>
+		<%=f.label :interests %>
+		<%=f.text_field :interests %>
+		<br>
+		<%=f.label :username %>
+		<%=f.text_field :username %>
+		<br>
+		 <%= f.file_field :avatar %>
+		 <br>
+		<%=f.submit 'Submit' %>
+		<%end%>
+
+	</div>

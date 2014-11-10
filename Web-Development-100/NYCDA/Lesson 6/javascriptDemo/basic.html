@@ -1,0 +1,131 @@
+<html>
+
+<head>
+<title> Jquery practice page </title>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+		</script>
+
+	<script> 
+
+	$(document).ready(function(){
+       
+        $("#thisClass1").fadeOut(2000, function(){
+
+        	$("#thisClass2").click(function(){
+        		$("#thisClass3").animate({height:"300px"});
+        	});
+
+        	$("#thisClass3").click(function(){
+        		$("#thisClass3").animate({height:"200px"});
+        	});
+
+        	$("#thisClass5").click(function(){
+    			$("thisClass5").animate({height:500},1500);
+    			$("thisClass5").animate({width:500},1500);
+   				 $("thisClass5").animate({height:100},1500);
+   				 $("thisClass5").animate({width:100},1500);
+ 				 });
+
+            //$("#thisClass2").fadeIn(2000, function(){
+
+               // $("#thisClass3").css({color:"red"})
+
+             //       });
+                
+
+            });
+    });
+
+	</script>
+
+   </head>
+
+	<body>
+		<style> 
+
+   #thisClass1{
+		background :blue;
+		width: 300px;
+		height:200px;
+}
+
+	#thisClass2{
+		background :red;
+		width: 300px;
+		height:200px;
+
+}
+
+	#thisClass3{
+		background :gray;
+		width: 300px;
+		height:200px;
+}
+
+	#thisClass4{
+		background :black;
+		width: 300px;
+		height:200px;
+}
+	#thisClass5{
+		background :green;
+		width: 300px;
+		height:200px;
+}
+
+  #thisClass6{
+		background :orange;
+		width: 300px;
+		height:200px;
+}
+
+ #thisClass7{
+		background :purple;
+		width: 300px;
+		height:200px;
+}
+
+ #thisClass8{
+		background :yellow;
+		width: 300px;
+		height:200px;
+}
+
+#thisClass9{
+		background :brown;
+		width: 300px;
+		height:200px;
+}
+
+ #thisClass0{
+		background :blue;
+		width: 300px;
+		height:200px;
+}
+
+		</style>
+
+<div id= "thisClass1">Mama mia</div>
+<br>
+<div id= "thisClass2">Mama mia</div>
+<br>
+<div id= "thisClass3">Mama mia</div>
+<br>
+<div id= "thisClass4">Mama mia</div>
+<br>
+<div id= "thisClass5">Mama mia</div>
+<br>
+<div id= "thisClass6">Mama mia</div>
+<br>
+<div id= "thisClass7">Mama mia</div>
+<br>
+<div id= "thisClass8">Mama mia</div>
+<br>
+<div id= "thisClass9">Mama mia</div>
+<br>
+<div id= "thisClass0">Mama mia</div>
+
+	</body>
+
+</html>

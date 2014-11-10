@@ -1,0 +1,22 @@
+<h1><center> <u>Events </u></center></h1>
+
+<h3> The list of events that we currently have: </h3>
+
+<% @events.each do |event| %>
+  
+<div class = 'event' style = 'float: center'>
+ <h6><%= event.name %></h6> 
+  <br>
+  <%= image_tag event.avatar.url(:medium) %>
+  <br>
+  <h6><%= event.date %> <%= event.time %> <%= event.location %></h6> 
+  <br>
+  <%= link_to 'More information', event_path(event) %>
+<%= link_to 'Edit this event', edit_event_path(event) %>
+</div>
+<br>
+<% end %>
+<br>
+<br>
+<br>
+<%= link_to 'Create a new event', new_event_path %>

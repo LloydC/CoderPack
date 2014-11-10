@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+background-color: SteelBlue;
+margin: 0;
+}
+.container{
+  min-height: 600px;
+  padding-top: 150px;
+}
+
+.header-bar {
+  width: 100%;
+  height: fit;
+  background-color: white;
+  opacity: .9;
+  border:solid 4px #000;
+  border-radius: 0 0 0px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.header-bar-box{
+  height: 110px;
+  width: fit;
+  float: left;
+  opacity: 1;
+}
+
+#logo {
+  margin: 0px 0 0 20px;
+
+}
+#signup{
+  background: red;
+  width:150px;
+  height:240px;
+}
+#nav {
+  float: right;
+  margin-right: 300px;
+  margin-top: 20px;
+}
+
+#nav ul{
+  list-style-type: none;
+}
+
+#nav li {
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#nav a{
+  text-decoration: none;
+  color: black;
+  font-family: impact;
+  font-weight: bold;
+  font-size: 19px;
+  opacity: 1;
+  transition: color .5s ease;
+}
+
+#nav a:hover{
+  color: gray;
+}
+
+#footer{
+height: 150px;
+
+margin-top: 120px;
+
+background-color: gray;
+color :black;
+border:solid 4px #000;
+border-radius: 4px 4px 4px 4px;
+}

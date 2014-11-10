@@ -1,0 +1,21 @@
+<h1><center> <u>Destinations </u></center></h1>
+<h3> The list of destinations that we currently hold information about: </h3>
+<br>
+<% @destinations.each do |destination| %>
+  
+<div class = 'dest' style = 'float: center'>
+ <h6><%= destination.name %>, <%= destination.country %></h6> 
+  <br>
+  <br>
+  <%= image_tag destination.avatar.url(:medium) %>
+  <br>
+  <br>
+  <%= link_to 'Click here to see more information', destination_path(destination) %>
+<%= link_to 'Edit this destination', edit_destination_path(destination) %>
+</div>
+<br>
+<% end %>
+
+<br>
+<br>
+<%= link_to 'Admin can add a new destination by clicking here', new_destination_path %>

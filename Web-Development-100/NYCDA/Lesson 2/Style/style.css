@@ -1,0 +1,7 @@
+#myImage {
+
+border:solid 1px #fff;
+width:384px;
+height:216px;
+background-image:url(../Images/images.jpg);
+}

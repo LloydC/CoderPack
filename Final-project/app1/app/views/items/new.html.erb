@@ -1,0 +1,29 @@
+<center>
+	<div id = "signup-edit">
+		<h2><u>Add a traveling item to the database :</u></h2>
+
+		<%=form_for @item, :url => items_path, :html => { :multipart => true } do |f| %>
+
+		<%=f.label :name %>
+		<%=f.text_field :name %>
+		<br>
+		<%=f.label :details %>
+		<%=f.text_field :details %>
+		<br>
+		<%=f.label :price %>
+		<%=f.text_field :price %>
+		<br>
+		<%=f.label :category %>
+		<%=f.text_field :category %>
+		<br>
+		<%=f.label :url %>
+		<%=f.text_field :url %>
+		<br>
+		<br>
+		 <%= f.file_field :avatar %>
+		 <br>
+		<%=f.submit 'Submit' %>
+		<%end%>
+</div>
+</center>
+<%= link_to 'Go back to the list of items', items_path %>

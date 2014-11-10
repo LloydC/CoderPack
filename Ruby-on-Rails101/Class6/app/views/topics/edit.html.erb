@@ -1,0 +1,12 @@
+<h1>Edit your topic here</h1>
+
+<%= form_for [@topic] do |f| %>   
+<%=f.label :title %>   
+<%=f.text_field :title %>
+<%=f.label :description %>   
+<%=f.text_field :description %>
+<%=f.submit %> 
+<% end %>
+<br>
+
+<center><%= link_to "Go home", :back %><center>

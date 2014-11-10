@@ -1,0 +1,34 @@
+<center><div id = "signup">
+		<h2><u>Sign Up</u></h2>
+
+		<%=form_for @user,remote: true, :url => users_path, :html => { :multipart => true } do |f| %>
+		<%=f.label :username %>
+		<%=f.text_field :username %>
+		<br>
+		<%=f.label :email %>
+		<%=f.text_field :email %>
+		<br>
+		<%=f.label :password %>
+		<%=f.password_field :password %>
+		<br>
+		 <%= f.file_field :avatar %>
+		 <br>
+		 <%=f.label :gender %>
+		<%=f.text_field :gender %>
+		<br>
+		<%=f.label :age %>
+		<%=f.text_field :age %>
+		<br>
+		<%=f.label :job %>
+		<%=f.text_field :job %>
+		<br>
+		<%=f.label :interests %>
+		<%=f.text_field :interests %>
+		<br>
+		<%=f.label :about %>
+		<%=f.text_field :about %>
+		<br>
+		<%=f.submit :submit, data: {disable_with: 'Submitting...'} %>
+		<%end%>
+
+	</div></center>

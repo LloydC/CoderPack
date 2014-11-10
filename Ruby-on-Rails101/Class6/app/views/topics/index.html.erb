@@ -1,0 +1,11 @@
+<br>
+<h1> <center><u>Topics page</u></center></h1>
+<br>
+
+<% @topics.each do |topic| %>
+<p> <%= topic.title %> <%= topic.id %> </p>
+<p><%= link_to "Topic details", topic_path(topic)%>  <%= link_to "Edit Topic", edit_topic_path(topic)%>  <%= link_to "Remove topic", topic_path(topic), method: :delete %></p>
+<%= link_to "Topic replies", topic_replies_path(topic) %>
+<% end %>
+
+<center><%= link_to "Go home", users_path()%> </center>

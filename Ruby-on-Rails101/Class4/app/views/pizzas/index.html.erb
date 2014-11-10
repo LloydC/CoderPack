@@ -1,0 +1,7 @@
+<h1> Pizza List </h1>
+
+<% @pizzas.each do |u| %>
+<p><%= u.name  %> <%= link_to "Remove pizza", pizza_path(u), method: :delete %></p>
+<% end %>
+
+

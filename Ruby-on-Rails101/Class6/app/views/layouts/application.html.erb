@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class6</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= flash[:notice] if flash[:notice] %>
+<%= flash[:alert] if flash[:alert] %>
+
+<div class="header-bar">
+	<div class="header-bar-box" id="logo">	
+
+		<% if current_user  %>
+		<h4>Welcome <%= current_user.username %></h4>
+		<%= link_to "Logout", sessions_path(), method: :delete %>
+		<% end %>
+
+		</div>
+
+			<div class="header-bar-box" id="nav">
+				<nav>
+					<ul>
+		<li><a href="/users">Users</a></li>
+		<li><a href="/">Topics</a></li>
+		<li><a href="/topics">Replies</a></li>
+		<li><a href="/users/1/replies">Replies</a></li>
+					</ul>
+				</nav>
+			</div>	
+		</div>
+<br>
+<br>
+<%= yield %>
+
+</body>
+</html>

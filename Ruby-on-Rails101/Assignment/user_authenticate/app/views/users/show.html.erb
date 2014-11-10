@@ -1,0 +1,6 @@
+<h1><center> Welcome to <%= @user.email %> page</center>  </h1>
+<br>
+<%= @user.email %> <%= link_to "Go home", :back %> 
+<br>
+<%= @posts %>
+<%= link_to "Create a new post", new_user_post_path(:user_id) %>

@@ -1,0 +1,15 @@
+<h1><%= @item.name %> </h1>
+
+<center><div class = 'item-show'>
+<br>
+<p><%= image_tag @item.avatar.url(:medium) %> </p>
+
+<p><%= @item.details %></p>
+<br>
+<br>
+<p>$<%= @item.price %></p>
+
+<p>Should you wish to purchase this item, click <%= link_to 'here', @item.url, :target => "_blank"  %></p>
+</div></center>
+
+<%= link_to 'Go back', items_path %>

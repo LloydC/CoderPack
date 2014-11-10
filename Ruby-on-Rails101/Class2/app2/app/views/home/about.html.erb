@@ -1,0 +1,7 @@
+<h1> About page <% @id %> </h1>
+<%= link_to "Go home", home_path %>
+<%= render 'twitter_widget', title: 'Urgent message for you', body: "This is really important", test: "More practice is needed"%>
+
+<% @my_message.each do|t| %>
+<p> !<%= t[:title]%> : <%= t[:body]%></p>
+<% end %>

@@ -1,0 +1,16 @@
+<h2><%= @event.name %> </h2>
+<br>
+<center><%= image_tag @event.avatar.url(:medium) %></center>
+<br>
+<h3> About this event: </h3>
+<br>
+<p><u>Information: </u> <%= @event.details %> </p> 
+  <br>
+ <p> <u>Date:</u><%= @event.date %></p> 
+  <br>
+  <p> <u>Time:</u><%= @event.time %></p> 
+  <br>
+  <p> <u> Location: </u> <%= @event.location %></p>
+  <br>
+  <br>
+<%= link_to 'Go back', events_path %>

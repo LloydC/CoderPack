@@ -1,0 +1,7 @@
+<h1><center>Reply details</center></h1>
+<br>
+<p><%= @reply.body %></p>
+<br>
+<p>This is a reply to topic <%= @reply.topic_id %> posted on <%= @reply.created_at %> by <%= @user.username %> and also <%= @topic %> </p>
+
+<center><%= link_to "Go home", user_replies_path(@user.id)%> </center>

@@ -1,0 +1,10 @@
+<h1>Edit your user here</h1>
+
+<%= form_for @users do |f| %>   
+<%=f.label :username %>   
+<%=f.text_field :username %>
+<%=f.submit :update %> 
+<% end %>
+<br>
+<center><%= link_to "Go home", root_path()%><center>
+

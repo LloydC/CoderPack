@@ -1,0 +1,9 @@
+<br>
+<h1><center><%= @user.username %> page</center></h1>
+<p> Welcome! As of right now you can use the navigation bar above to check for destinations that you have an interest in. </p>
+
+<p> You can also look at our list of items and purchase items that  you find useful to have or that you find helpful to have wherever you decide to travel.</p>
+
+<p> According to our records, your list of interests include <%= @user.interests %></p>
+<br>
+<p>Should you wish to update some of your details, here is the link <%= link_to 'Edit', edit_user_path  %></p>

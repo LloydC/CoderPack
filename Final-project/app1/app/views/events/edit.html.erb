@@ -1,0 +1,29 @@
+<h2><u>Edit your event here: </u></h2>
+
+<%=form_for @event, :url => event_path, :html => { :multipart => true } do |f| %>
+
+		<%=f.label :name %>
+		<%=f.text_field :name %>
+		<br>
+		<%=f.label :category %>
+		<%=f.text_field :category %>
+		<br>
+		<%=f.label :details %>
+		<%=f.text_field :details %>
+		<br>
+		<%=f.label :date %>
+		<%=f.text_field :date %>
+		<br>
+		<%=f.label :time %>
+		<%=f.text_field :time %>
+		<br>
+		<%=f.label :location %>
+		<%=f.text_field :location %>
+		<br>
+		<%=f.label :destination_id %>
+		<%=f.text_field :destination_id %>
+		<br>
+		 <%= f.file_field :avatar %>
+
+		<%=f.submit 'Submit' %>
+		<%end%>

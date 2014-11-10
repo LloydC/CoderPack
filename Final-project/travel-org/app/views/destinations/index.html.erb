@@ -1,0 +1,11 @@
+<h1>This is the list of destinations that we currently hold information about: </h1>
+
+<% @destinations.each do |destination| %>
+  <%= destination.avatar %>
+  <br>
+ <h4> Destination number <%= destination.id %> : <%= destination.city %>, <%= destination.country %></h4> 
+
+   <p> <b>Information + Accomodation plan:</b> <%= destination.information %>, <%= destination.accomodation %> </p>
+   <br>
+ 
+  <% end %>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App1</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= flash[:notice] if flash[:notice] %>
+<%= flash[:alert] if flash[:alert] %>
+
+	<div class="header-bar">
+			<div class="header-bar-box" id="logo">		
+				<%=image_tag "logo_web.jpg"%>
+			</div>
+
+			<div class = 'header-bar-box' id = 'id'>
+					<% if current_user  %>
+
+			<%= image_tag current_user.avatar.url(:thumb) %>
+			<b><p>	Welcome <%= current_user.username %> 
+				<%= link_to "Logout", sessions_path(), method: :delete %> </p></b>
+
+					<% end %>
+			</div>
+
+			<div class="header-bar-box" id="nav">
+				
+				<nav>
+					<ul class="drop">
+						<% if current_user  %>
+					<li><a href="/"><%= link_to 'Home', user_path(current_user) %></a></li>
+					<li><a href="/items">Traveling items</a></li>
+					<li><a href="/destinations">Destinations</a></li>
+					<li><a href="/events">Events</a></li>
+					<li><a href="#">Interest-Match</a></li>
+					<% end %>
+					
+					</ul>
+				</nav>
+				 
+			</div>	
+
+	</div>
+		
+  		<div class="container">
+    	<%= render 'layouts/messages' %>
+    		
+    <%= yield %>
+  
+  	</div>
+
+		<div id = "footer">
+		<h4>Copyright &copy; Web Design by Lloyd Chambrier</h4>
+		</div>
+</body>
+</html>

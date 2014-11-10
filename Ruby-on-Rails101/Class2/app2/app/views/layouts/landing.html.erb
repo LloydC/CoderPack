@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header> My Site Name </header>
+
+<%= yield %>
+<nav>
+<%= link_to "Go home", home_path %>
+<%= link_to "About me", about_path(Time.now) %>
+</nav>
+<% 5.times do %>
+<p><i>The purpose of art is washing the dust of daily life off our souls.</i><b> Pablo Picasso </b></p>
+<% end %>
+</body>
+</html>

@@ -3,7 +3,7 @@ html{
 background-image: url(../images/second_photo.jpg);
 background-repeat: no-repeat;
 background-position: center;
-position: fixed;
+position: relative;
 background-size: cover;
 min-width: 75%;
 min-height: 75%;
@@ -16,6 +16,12 @@ h1{
 background-color: white;	
 text-align: center;
 font-family: impact;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
 }
 
 .header-bar {
